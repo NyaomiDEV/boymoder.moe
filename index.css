@@ -1,27 +1,35 @@
-.girlmode {
-    text-decoration: none;
-    letter-spacing: 5px;
-    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    animation: rainbow_animation 6s ease-in-out infinite;
-    background-size: 400% 100%;
-    display: flex; 
-    text-align: center; 
-    font-family: sans-serif; 
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+#container {
     align-items: center; 
     justify-content: center; 
     width: 100vw;
     height: 100vh;
+    display: flex; 
 }
 
-@keyframes rainbow_animation {
-    0%,100% {
+#girlmode {
+    text-decoration: none;
+    letter-spacing: 5px;
+    background: linear-gradient(to right, #ff0000, #ff00ff, #0000ff, #00ffff, #00ff00, #ffff00, #ff0000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow 3s linear infinite;
+    background-size: 200% 100%;
+    text-align: center; 
+    font-family: monospace; 
+}
+
+@keyframes rainbow {
+    0% {
         background-position: 0 0;
     }
 
-    50% {
-        background-position: 100% 0;
+    100% {
+        background-position: 200% 0;
     }
 }
